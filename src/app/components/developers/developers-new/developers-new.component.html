@@ -1,0 +1,19 @@
+<div>Nome: <input [(ngModel)]="developer.name"></div>
+<div>Nivel:
+  <select [(ngModel)]="developer.level_id">
+      <option *ngFor="let level of levels" value="{{level.id}}">{{level.name}}</option>
+  </select>
+</div>
+<div>Idade: <input [(ngModel)]="developer.age"></div>
+<div>Sexo:
+  <select [(ngModel)]="developer.genre">
+    <option value="Masculino">Masculino</option>
+    <option value="Feminino">Feminino</option>
+    <option value="Outro">Outro</option>
+  </select>
+</div>
+<div>Data de nascimento: <input [(ngModel)]="developer.birthdate"></div>
+<div>Hobby: <input [(ngModel)]="developer.hobby"></div>
+<div><button (click)="save()">Salvar</button></div>
+
+

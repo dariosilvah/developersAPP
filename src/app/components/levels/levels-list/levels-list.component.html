@@ -1,0 +1,12 @@
+<table border="1">
+  <thead>
+  <th>ID</th>
+  <th>Nome</th>
+  <th>Acoes</th>
+  </thead>
+  <tr *ngFor="let level of levels">
+    <th>{{level.id}}</th>
+    <th>{{level.name}}</th>
+    <th><button (click)="delete(level)">Deletar</button> | <button (click)="edit(level)">Editar</button></th>
+  </tr>
+</table>

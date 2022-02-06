@@ -1,0 +1,20 @@
+<table border="1">
+  <thead>
+  <th>ID</th>
+  <th>Nome</th>
+  <th>Nivel</th>
+  <th>Idade</th>
+  <th>Sexo</th>
+  <th>Hobby</th>
+  <th>Acoes</th>
+  </thead>
+  <tr *ngFor="let developer of developers">
+    <th>{{developer.id}}</th>
+    <th>{{developer.name}}</th>
+    <th>{{developer.level_name}}</th>
+    <th>{{developer.age}}</th>
+    <th>{{developer.genre}}</th>
+    <th>{{developer.hobby}}</th>
+    <th><button (click)="delete(developer)">Deletar</button> | <button (click)="edit(developer)">Editar</button></th>
+  </tr>
+</table>
